@@ -1,0 +1,29 @@
+*{
+    font-size:55px;
+    font-weight:bold;
+    margin: 20px;
+    
+}
+.hour, .min, .sec, .M{
+    background-color: rgb(59, 210, 69);
+    padding: 16px;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: inline-block;
+    height: 60px; 
+    width: 80px;
+    text-align: center;
+    margin: 6px;
+}
+
+.min{
+    background-color: rgb(59, 150, 210);;
+}
+
+.sec{
+    background-color: rgb(59, 210, 162);;
+}
+.M{
+    background-color: rgb(170, 210, 59);;
+}
