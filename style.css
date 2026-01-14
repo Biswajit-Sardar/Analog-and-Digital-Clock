@@ -5,7 +5,73 @@
     
 }
 
-.hour, .min, .sec, .M{
+:root {
+    --rotate: 0deg;
+}
+
+body{
+    background-color:rgb(25, 69, 51);
+}
+
+.clock{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background-image: url(image.png);
+    background-position: center;
+    background-size: cover;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.clock::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: rgb(30, 17, 85);
+    border-radius:50% ;
+    z-index: 400;
+}
+.clock .hour,.clock .min,.clock .sec{
+    position: absolute;
+    background-color: rgb(211, 54, 54);
+    border-radius: 15px 15px 0 0;
+    transform: translateY(-50%) rotate(var(--rotate));
+    transform-origin: bottom;
+}
+
+.clock .hour{
+    height: 65px;
+    width: 10px;
+    z-index: 100;
+}
+
+.clock .min{
+    height: 90px;
+    width: 5px;
+    z-index: 100;
+    background-color: rgb(63, 158, 241);
+}
+.clock .sec{
+    height: 75px;
+    width: 6px;
+    z-index: 100;
+    background-color: rgb(102, 80, 216);
+}
+  
+
+
+
+
+
+
+
+/*Digital clock*/
+.hour1, .min1, .sec1, .M1{
     background-color: rgb(59, 210, 69);
     padding: 16px;
     border-radius: 12px;
@@ -18,17 +84,17 @@
     margin: 6px;
 }
 
-.min{
+.min1{
     background-color: rgb(59, 150, 210);;
 }
 
-.sec{
+.sec1{
     background-color: rgb(59, 210, 162);;
 }
-.M{
+.M1{
     background-color: rgb(170, 210, 59);;
 }
-.day ,.month,.year{
+.day1 ,.month1,.year1{
     background-color: rgb(182, 118, 54);
     padding: 16px;
     border-radius: 12px;
@@ -41,10 +107,10 @@
     font-size: 32px;
 }
 
-.month{
+.month1{
     background-color: rgb(182, 54, 165);
 }
 
-.year{
+.year1{
     background-color: rgb(110, 182, 54);
 }

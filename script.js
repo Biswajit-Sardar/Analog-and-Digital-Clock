@@ -14,22 +14,21 @@ function myTime(){
 
         /*currentTime=hr + ":" + min + ":" +sec +""; 
         document.getElementsByClassName("H")[0].innerHTML=currentTime;*/
-        document.getElementsByClassName("hour")[0].innerHTML=hr;
-         document.getElementsByClassName("min")[0].innerHTML=min;
-          document.getElementsByClassName("sec")[0].innerHTML=sec;
-        document.getElementsByClassName("M")[0].innerHTML= M;
+        document.getElementsByClassName("hour1")[0].innerHTML=hr;
+         document.getElementsByClassName("min1")[0].innerHTML=min;
+          document.getElementsByClassName("sec1")[0].innerHTML=sec;
+        document.getElementsByClassName("M1")[0].innerHTML= M;
         myDay=[ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         myMonth=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         day= myDate.getDate();
 
        /* currentDate= myDay[myDate.getDay()] + ", "+ " " + day + " " + myMonth[myDate.getMonth()] + " " + myDate.getFullYear();  ;
         document.getElementsByClassName("Date")[0].innerHTML=currentDate; */
-        document.getElementsByClassName("day")[0].innerHTML= myDay[myDate.getDay()];
-        document.getElementsByClassName("month")[0].innerHTML= day + ", " + myMonth[myDate.getMonth()];
-        document.getElementsByClassName("year")[0].innerHTML= myDate.getFullYear();
+        document.getElementsByClassName("day1")[0].innerHTML= myDay[myDate.getDay()];
+        document.getElementsByClassName("month1")[0].innerHTML= day + ", " + myMonth[myDate.getMonth()];
+        document.getElementsByClassName("year1")[0].innerHTML= myDate.getFullYear();
 }
+
 var hr, min,sec, M, currentDate, currentTime, myDate, myMonth, day, myDay;
-
-
 myTime();
-setInterval(myTime,1000)
+setInterval(myTime,1000);
