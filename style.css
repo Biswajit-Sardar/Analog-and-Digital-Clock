@@ -12,11 +12,15 @@
 body{
     background-color:rgb(25, 69, 51);
 }
+.page{
+    text-align: center;
+    display: flex;
+}
 
 .clock{
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 550px;
+    width: 550px;
     background-image: url(image.png);
     background-position: center;
     background-size: cover;
