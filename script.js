@@ -28,7 +28,22 @@ function myTime(){
         document.getElementsByClassName("month1")[0].innerHTML= day + ", " + myMonth[myDate.getMonth()];
         document.getElementsByClassName("year1")[0].innerHTML= myDate.getFullYear();
 }
+const hour2 = document.querySelector('.hour');
+const min2 = document.querySelector('.min');
+const sec2 = document.querySelector('.sec');
 
+const deg = 6;
+
+setInterval(() => {
+    let day2 = new Date();
+    let hh = day2.getHours() * 30;
+    let mm = day2.getMinutes() * deg;
+    let ss = day2.getSeconds() * deg;
+
+    hour2.style.setProperty('--rotate', (hh) + (mm / 12) + "deg");
+    min2.style.setProperty('--rotate', mm + 'deg');
+    sec2.style.setProperty('--rotate', ss + 'deg');
+});
 var hr, min,sec, M, currentDate, currentTime, myDate, myMonth, day, myDay;
 myTime();
 setInterval(myTime,1000);
