@@ -28,6 +28,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 
 }
 
@@ -49,19 +50,19 @@ body{
 }
 
 .clock .hour{
-    height: 65px;
+    height: 110px;
     width: 10px;
     z-index: 100;
 }
 
 .clock .min{
-    height: 90px;
+    height: 160px;
     width: 5px;
     z-index: 100;
     background-color: rgb(63, 158, 241);
 }
 .clock .sec{
-    height: 75px;
+    height: 128px;
     width: 6px;
     z-index: 100;
     background-color: rgb(102, 80, 216);
